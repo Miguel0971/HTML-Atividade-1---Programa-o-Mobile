@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu texto simples</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>Joguinho da cobra</title>
+    <link href="../style/mainstyle.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>A terra é redonda?</h1>
-    <h2>A resposta simples e direta é: Não. Quase nenhum corpo celeste é completamente redondo, sua gravidade e seus materiais fornecem uma diferença de pressão entre pontos distintos, analisando corretamente a terra e seu formato você verá que ela é deformada para os cantos, um formato mais oval do que redondo.</h2>
-    <img src="https://img.odcdn.com.br/wp-content/uploads/2022/06/Terra-por-ICGEM.png" />
-    <h2> Esta acima é a forma do geoide, a forma aproximada mais fiel ao real formato do planeta terra. É correto sim afirmar que ela funciona no modelo "redondo" que tanto chamam, o modelo físico que todos conhecem e que apreciam.</h2>
-    <h3> Mesmo não sendo nem redonda nem plana, os termos propostos na teoria do terraplanista estão completamente errados, aqui vão alguns esclarecimentos sobre as propriedades físicas dos corpos celestes:</h3>
-    <ul>
-        <li>Corpos celestes são fortemente afetados pela força da gravidade, que os comprime em uma forma quase que esférica, mas outros fatores como o movimento de seus núcleos podem influenciar no formato final, não formando de fato uma esfera perfeita.</li>
-        <li>Os planetas e satélites têm formas que variam de esféricas a mais alongadas, dependendo de sua composição e rotação.</li>
-        <li>Os corpos celestes que possuem uma rotação rápida tendem a ter uma forma mais alongada, como o planeta Júpiter.</li>
-    </ul>
-    <h1>Tá, a terra não é redonda de fato, mas como funcionam as estrelas? Como surgimos?</h1>
-    <h2>Ah, isso é mais simples do que parece! As estrelas são corpos celestes de massa superior a planetas, com uma densidade tão grande que é capaz de fundir os próprios átomos e liberar energia, vista em forma de luz por nós.</h2>
-    <h2>Existe apenas um tipo de estrela que praticamente não emite brilho, as estrelas marrons. Elas são a fase intermediária que separa o que é um planeta e o que é uma estrela, são muito parecidas com planetoides mas na classificação estelar.</h2>
-    <h3>A depender da massa presente em um corpo estelar, determina como que será o fim da vida da mesma. Nosso sol por exemplo, terminará a vida como uma anã branca, resultado de uma supernova no estágio final da sua vida, que por sua vez será uma gigante vermelha.</h2>
-    <h2>"O Inchaço" é o nome dado ao fenômeno que marcará a última idade de nosso sol, será quando ele inchará em uma gigante vermelha de 150 a 200 vezes maior que seu diâmetro atual.</h2>
-    <img src="https://static.wikia.nocookie.net/entraaqui/images/d/d0/Download.jpeg/revision/latest/thumbnail/width/360/height/360?cb=20230131003253&path-prefix=pt-br" />
-    <h1>Certas estrelas possuem brilhos e tamanhos diferentes de acordo com sua massa, na seguinte ordem:</h1>
-    <ul>
-        <li>Anã marrom = São as menores, sua massa é cerca de 13 a 80 vezes a massa de <b>Júpiter</b></li>
-        <li>Anã vermelha = São as mais comuns no universo, sua massa é cerca de 0,08 a 0,45 vezes a massa do <b>Sol</b></li>
-        <li>Anã amarela = São as estrelas de massa intermediária, como o <b>Sol</b>, sua massa é cerca de 0,8 a 1,2 vezes a massa do <b>Sol</b></li>
-        <li>Anã branca = São a fase final da vida de uma estrela de baixa massa como o sol, sua massa é cerca de 1,04 a 1,4 vezes a massa do <b>Sol</b>. Apesar de existir brilho, elas não realizam mais fusão nuclear.</li>
-    </ul>
-    <h4>Importante deixar claro que acima é só uma regra para as ANÃS, ainda existem as gigantes com mais classificações, mas complexas demais para serem listadas em um texto curto de aprendizado!</h1>
+    <canvas id="gamecanvas" width="400" height="400"></canvas>
+    <script src="../scripts/mainscript.js"></script>
 </body>
 <footer>
     <p>Miguel Henrique © 2026.1 - UNISO</p>
+    <a href="https://instagram.com/miguel.h.som" target="_blank"
+   style="
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+     color: white;
+     padding: 10px 18px;
+     border-radius: 10px;
+     text-decoration: none;
+     font-weight: bold;
+     font-family: Arial, sans-serif;
+     transition: 0.3s;
+   "
+   onmouseover="this.style.transform='scale(1.05)'"
+   onmouseout="this.style.transform='scale(1)'"
+>
+  <!-- Ícone SVG do Instagram -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
+    <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.22 4 20 5.78 20 7.75v8.5c0 1.97-1.78 3.75-3.75 3.75h-8.5C5.78 20 4 18.22 4 16.25v-8.5C4 5.78 5.78 4 7.75 4zm8.75 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+  </svg>
+
+  Instagram
+</a>
 </footer>
 </html>
